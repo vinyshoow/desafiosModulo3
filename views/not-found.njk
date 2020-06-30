@@ -1,0 +1,65 @@
+  {% extends "layout.njk" %}
+
+  {% block head %}
+    <title>Rocketseat | Página não encontrada.</title>
+    <link rel="stylesheet" href="/stylesHome.css">
+  {% endblock head %}
+
+  {% block header %}
+    <header>
+      <div id="links" class="header">
+        <img src="https://rocketseat.com.br/static/images/logo-rocketseat.svg" alt="Logo Rocketseat">
+        <a href="/">Inicio</a>
+        <a href="/about" target="_blank">Sobre</a>
+        <a href="https://rocketseat.com.br/gostack" target="_blank">Bootcamp</a>
+        <a href="https://rocketseat.com.br/comunidade" target="_blank">Comunidade</a>
+        <a href="https://blog.rocketseat.com.br/" target="_blank">Blog</a>
+        <div id="icons" class="icons">
+          <a href="fb.com/rocketseat" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/facebook.svg" alt="Facebook">
+          </a>
+          <a href="instagram.com/rocketseat_oficial" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/instagram.svg" alt="Instagram">
+          </a>
+          <a href="twitter.com/rocketseat" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/twitter.svg" alt="Twitter">
+          </a>
+          <a href="youtube.com/rocketseat" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://skylab.rocketseat.com.br" target="_blank" class="button">Login</a>
+        </div>
+      </div>
+
+    </header>
+  {% endblock header %}
+  
+  {% block content %}
+  <div class="not-found">
+    <h1>Ei dev, essa página não pode ser encontrada :/</h1>
+    <p>Se quiser voltar para a página inicial, <a href="/">é só clicar aqui</a>.</p>
+  </div>
+
+  <div class="footer__not-found">
+    <div class="img-left">
+      <img src="https://rocketseat.com.br/static/images/update/techs-1.svg" alt="Techs1">
+    </div>
+
+    <div class="img-center">
+      <img src="https://rocketseat.com.br/static/images/update/yoda.svg" alt="Yoda">
+      <div class="content-center">
+        <h2>Receba conteúdos exclusivos</h2>
+        <p>Receber spam, você não irá!</p>
+        <input type="text" placeholder="Digite seu melhor email">
+          <span>
+            <img src="https://rocketseat.com.br/static/images/icons/send.svg" alt="clique">
+          </span>
+                
+      </div>
+    </div>
+
+    <div class="img-right">
+      <img src="https://rocketseat.com.br/static/images/update/techs-2.svg" alt="Techs2">
+    </div>    
+  </div>
+  {% endblock content %}

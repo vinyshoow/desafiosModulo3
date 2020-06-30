@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  background-color: rgb(113, 89, 193);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+#links {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+#links a img {
+  margin-right: 24px;
+}
+
+#links a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.397);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#links a.selected {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+#links.header a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  transition: all linear 200ms;
+}
+
+#links .icons {
+  margin-left: 180px;
+}
+
+#links .icons a {
+  margin: 6px;
+}
+
+#links .icons a img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+#links .icons .button{
+  margin-left: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  height: 50px;
+  color: rgb(113, 89, 193);
+  background-color: rgb(255, 255, 255);
+  padding: 8px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-transform: initial;  
+}
+
+#links #icons a:hover{
+  border: none;
+  color: rgb(113, 89, 193);
+}
+
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin: 60px auto;
+  width: 80%;
+}
+
+#content h1 {
+  font-weight: bold;
+  width: 460px;
+  height: 144px;
+  font-size: 36px;
+  color: #4b4b4b;
+}
+
+#content p {
+  width: 460px;
+  height: 96px;
+  font-size: 18px;
+  color: #9a8ebf;
+  margin: 10px 0;
+}
+
+#content .info a {
+  width: 269px;
+  height: 41px;
+  color: #ffffff;
+  background-color: #7159c1;
+  margin-top: 15px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#content .info a:hover{
+  opacity: 0.9;
+}
+
+.footer {
+  background-color: rgb(113, 89, 193);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+}
+
+.img_troph {
+  text-align: center;
+}
+
+.techs {
+  margin-right: 32px;
+}
+
+.techs h1 {
+  color: white;
+  width: 515px;
+  height: 96px;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.techs h2 {
+  font-size: 24px;
+  line-height: 52px;
+  color: #DDD5f8;
+}
+
+.techs p {
+  width: 515px;
+  height: 96px;
+  font-size: 16px;
+  line-height: 32px ;
+  color: #DDD5f8;
+}
+
+/* NOT-FOUND */
+
+.not-found {
+  text-align: center;
+  padding: 60px;
+  margin: 48px 0;
+}
+
+.not-found h1 {
+  font-size: 32px;
+  color: #4b4b4b;
+}
+
+.not-found p,
+.not-found a {
+  font-size: 18px;
+  color: #9a8ebf;
+  margin-top: 15px;
+}
+
+.not-found a {
+  text-decoration: none;
+}
+
+.not-found a:hover {
+  text-decoration: underline;
+}
+
+.footer__not-found {
+  width: 100%;
+  height: 180px;
+  background-color: rgb(113, 89, 193);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-left,
+.img-right {
+  text-align: center;
+  margin-top: 66px;
+}
+
+.img.left {
+  margin-left: 60px;
+}
+
+.img-center {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.content-center h2 {
+  color: white;
+  width: 305px;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.content-center p {
+  font-size: 15px;
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.content-center input {
+  background-color: #FFFFFF;
+  padding: 14px;
+  padding-right: 110px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+}
+
+/* PAGINA ABOUT */
+
+.about {
+  width: 100%;
+  height: 420px;
+  background-color: #f1efff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.content-about {
+  width: 80%;
+  padding: 0 30px;
+  margin-left: 120px;
+}
+
+.content-about h1 {
+  margin-top: 40px;
+  width: 460px;
+  height: 144px;
+  color: #4b4b4b;
+  font-size: 36px;
+}
+
+
+.content-about p {
+  width: 460px;
+  height: 64px;
+  color: #9a8ebf;
+  margin: 10px 0 0;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.content-about a {
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: #7159c1;
+  margin-top: 40px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+}
+
+.content-about a:hover {
+  opacity: 0.9;
+}
+
+.img-about {
+  margin-top: 40px;
+}

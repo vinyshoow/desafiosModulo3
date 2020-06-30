@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon"/>
+    {% block head %}    
+      <link rel="stylesheet" href="/stylesHome.css">
+      <title>Rocketseat | A menor distância entre você e seus objetivos como programador.</title>
+    {% endblock head %}
+  </head>
+  <body>
+    {% block header%}
+    <header>
+      <div id="links" class="header">
+        <img src="https://rocketseat.com.br/static/images/logo-rocketseat.svg" alt="Logo Rocketseat">
+        <a href="/" class="selected">Inicio</a>
+        <a href="/about" target="_blank">Sobre</a>
+        <a href="https://rocketseat.com.br/gostack" target="_blank">Bootcamp</a>
+        <a href="https://rocketseat.com.br/comunidade" target="_blank">Comunidade</a>
+        <a href="https://blog.rocketseat.com.br/" target="_blank">Blog</a>
+        <div id="icons" class="icons">
+          <a href="fb.com/rocketseat" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/facebook.svg" alt="Facebook">
+          </a>
+          <a href="instagram.com/rocketseat_oficial" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/instagram.svg" alt="Instagram">
+          </a>
+          <a href="twitter.com/rocketseat" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/twitter.svg" alt="Twitter">
+          </a>
+          <a href="youtube.com/rocketseat" target="_blank">
+            <img src="https://rocketseat.com.br/static/images/icons/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://skylab.rocketseat.com.br" target="_blank" class="button">Login</a>
+        </div>
+      </div>
+
+    </header>
+    {% endblock header%}
+
+    {% block content %}
+    {% endblock content %}
+    
+    {% block footer %}
+    {% endblock footer %}
+
+    {% block modal %}
+    {% endblock modal%}
+  </body>
+</html>
