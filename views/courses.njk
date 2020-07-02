@@ -24,56 +24,24 @@
 {% block content %}
   
   <section class="cards">
-    <div id="starter" class="card starter">
-      <div class="span__card">
-        <span>01</span>
+    {% for item in items %}    
+      <div id="{{item.id}}" class="card {{item.id}}">
+        <div class="span__card">
+          <span>{{item.span}}</span>
+        </div>
+
+        <div class="card__image-container">
+          <img src="{{item.img_url}}" alt="{{item.id}}">
+        </div>
+
+        <div class="card__info">
+          <p>
+            {{item.description}}
+          </p>
+
+        </div>
       </div>
-
-      <div class="card__image-container">
-        <img src="https://skylab.rocketseat.com.br/static/media/Starter.64c237cc.svg" alt="Starter">
-      </div>
-
-      <div class="card__info">
-        <p>
-          <strong>Torne-se um progrador desejado
-          </strong>no mercado com esses cursos gratuitos</p>
-
-      </div>
-    </div>
-
-    <div id="launchbase" class="card launchbase">
-      <div class="span__card">
-        <span>02</span>
-      </div>
-
-      <div class="card__image-container">
-        <img src="https://skylab.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="Starter">
-      </div>
-
-      <div class="card__info">
-        <p>
-          <strong>Domine a programação do zero
-          </strong>e tenha acesso às melhores oportunidades do mercado</p>
-
-      </div>
-    </div>
-
-    <div id="gostack" class="card gostack">
-      <div class="span__card">
-        <span>03</span>
-      </div>
-
-      <div class="card__image-container">
-        <img src="https://skylab.rocketseat.com.br/static/media/GoStack.83a178a0.svg" alt="Starter">
-      </div>
-
-      <div class="card__info">
-        <p>
-          <strong>Treinamento imersivo
-          </strong>nas tecnologias mais modernas de desenvolvimento web e mobile</p>
-
-      </div>
-    </div>
+    {% endfor %}
   </section>
 {% endblock content %}
 

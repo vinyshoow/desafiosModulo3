@@ -1,12 +1,14 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
+const courses = require('./data');
 const server = express();
 
 server.set('view engine', 'njk');
 server.use(express.static('public'));
 
 nunjucks.configure('views', {
-  express: server
+  express: server,
+  autoescape: false
 })
 
 server.get('/', (req, res) => {
@@ -14,7 +16,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/courses', (req, res) => {
-  res.render('courses');
+  res.render('courses', {items : courses});
 })
 
 server.get('/about', (req, res) => {
