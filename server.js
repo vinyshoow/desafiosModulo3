@@ -19,6 +19,19 @@ server.get('/courses', (req, res) => {
   res.render('courses', {items : courses});
 })
 
+server.get('/courses/:id', (req, res) => {
+  const id = req.params.id;
+
+  const curso = courses.find(function(curso) {
+    return curso.id == id;
+  });
+
+  if(!curso) {
+    return res.render("not-found");
+  }
+  return res.render("description", {item: curso});
+});
+
 server.get('/about', (req, res) => {
   res.render('about');
 })

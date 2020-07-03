@@ -6,13 +6,14 @@ const modalContent = document.querySelector('.modal-content');
 for(let card of cards) {
   card.addEventListener('click', () => {
     const idCurso = card.getAttribute('id');
-    modalOverlay.classList.add('active');
-    modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${idCurso}`;
+    window.location.href = `/courses/${idCurso}`;
+   /*  modalOverlay.classList.add('active');
+    modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${idCurso}`; */
   })
 }
 
 
-
+/* 
 document.querySelector('.close-modal').addEventListener('click', () => {
   modalOverlay.classList.remove('active');
   document.querySelector('iframe').src = '';
@@ -29,4 +30,4 @@ document.querySelector(".maximize-modal").addEventListener("click",() => {
     modal.classList.add('maximize');
     modalContent.classList.add('maximize');
   }
-})
+}) */

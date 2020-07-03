@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Conteúdos</title>
+{% endblock head %}
+
+{% block header%}
+  <header>
+    <div class="links">
+      <img src="https://skylab.rocketseat.com.br/static/media/logo.0ae02df1.svg" alt="Logo Rocketseat">
+
+      <div class="back">
+        <span class="material-icons">
+          keyboard_backspace
+        </span>
+        <a href="/">Voltar</a>
+      </div>
+    </div>
+  </header>
+{% endblock header%}
+
+{% block content %}  
+      
+        <div class="card__curso-container">
+            <iframe src="https://rocketseat.com.br/{{item.id}}" frameborder="0"></iframe>
+        </div>   
+  
+{% endblock content %}
