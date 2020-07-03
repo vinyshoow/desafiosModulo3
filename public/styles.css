@@ -219,13 +219,14 @@ iframe {
 
 .card__curso-container {
   width: 100%;
-  height: 100%;
+  height: 600px;
+  background-color: white;
 }
 
 .card__curso-container iframe {
   width: 80%;
   height: 80%;
-  margin: 5vh auto;
+  margin: 16px auto;
   left: 10%;
 }
 
