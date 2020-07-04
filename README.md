@@ -23,7 +23,7 @@ manipular variáveis do back-end para o front-end. Criamos um arquivo data.js qu
 
 ## :sunglasses: Como rodar os arquivos das aulas ?
 
-Basta você clonar esse diretório rodando:  `https://github.com/vinyshoow/foodfy-Construindo-Foodfy.git`, ou baixando o arquivo .zip. 
+Basta você clonar esse diretório rodando:  `https://github.com/vinyshoow/desafiosModulo3.git`, ou baixando o arquivo .zip. 
 Após baixar, acesse o diretório das aulas pelo terminal e rode o comando <b>npm install</b>. Ao término das instalações das dependências, rode no terminal o comando
 <b>npm start</b>, e abra no navegador no com link <b>localhost:3333</b>.
 
